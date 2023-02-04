@@ -2,4 +2,4 @@
 
 live preview : https://entertainment-hub-reactapp.netlify.app/
 
-![Alt text] (https://github.com/muhammedtri/movies-searching-app/blob/master/public/prev1.png?raw=true)
+![MOVIE APP](https://github.com/muhammedtri/movies-searching-app/blob/master/public/prev1.png?raw=true)
