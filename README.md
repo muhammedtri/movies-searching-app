@@ -1,5 +1,5 @@
 # Entertainment hub APP created using REACT
 
-live preview :
+live preview : https://entertainment-hub-reactapp.netlify.app/
 
-![Alt text] (https://github.com/muhammedtri/movies-searching-app/blob/master/public/prev1.png)
+![Alt text] (https://github.com/muhammedtri/movies-searching-app/blob/master/public/prev1.png?raw=true)
