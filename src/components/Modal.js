@@ -32,30 +32,29 @@ const CustomModal = ({ children, id, media_type }) => {
   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false)
 
-  const fetchData = async () => {
-    const { data } = await axios.get(
-      `https://api.themoviedb.org/3/${media_type}/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
-    )
-    setContent(data)
-  }
-  const fetchVideo = async () => {
-    const { data } = await axios.get(
-      `https://api.themoviedb.org/3/${media_type}/${id}/videos?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
-    )
-    setVideo(data.results[0]?.key)
-  }
-  const fetchImages = async () => {
-    const { data } = await axios.get(
-      `https://api.themoviedb.org/3/${media_type}/${id}/credits?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
-    )
-    setImages(data.cast)
-  }
-
   useEffect(() => {
+    const fetchData = async () => {
+      const { data } = await axios.get(
+        `https://api.themoviedb.org/3/${media_type}/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
+      )
+      setContent(data)
+    }
+    const fetchVideo = async () => {
+      const { data } = await axios.get(
+        `https://api.themoviedb.org/3/${media_type}/${id}/videos?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
+      )
+      setVideo(data.results[0]?.key)
+    }
+    const fetchImages = async () => {
+      const { data } = await axios.get(
+        `https://api.themoviedb.org/3/${media_type}/${id}/credits?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
+      )
+      setImages(data.cast)
+    }
     fetchData()
     fetchVideo()
     fetchImages()
-  }, [])
+  }, [id, media_type])
 
   return (
     <div>
