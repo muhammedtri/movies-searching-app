@@ -2,4 +2,4 @@
 
 live preview :
 
-![Alt text] (prev1.png)
+![Alt text] (https://github.com/muhammedtri/movies-searching-app/blob/master/public/prev1.png)
