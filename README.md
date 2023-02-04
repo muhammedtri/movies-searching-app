@@ -2,4 +2,4 @@
 
 live preview :
 
-![Alt text] ("%PUBLIC_URL%/favicon.png")
+![Alt text] (prev1.png)
